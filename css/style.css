@@ -1,0 +1,18 @@
+#slideshow{
+    width: 618px;
+}
+
+#slideshow img {
+    display:none;
+    z-index:10;
+}
+
+#slideshow img:first-child {
+    display:block;
+    z-index:1000;
+}
+
+#slideshow .slideActive {
+    z-index:1000;
+}
+

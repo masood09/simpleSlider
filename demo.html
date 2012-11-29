@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jQuery Simple Slide Show</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.simpleSlider.js"></script>
+	</head>
+
+	<body>
+		<div id="slideshowNavControls">
+			<span class="arrow prev">Prev</span>
+			<span class="arrow next">Next</span>
+		</div>
+		<div id="slideshow">
+	        <a href="http://www.google.com"><img src="images/nemo.jpg" alt="Nemo" /></a>
+	        <img src="images/toystory.jpg" alt="Toystory" />
+	        <img src="images/up.jpg" alt="Up" />
+	        <img src="images/walle.jpg" alt="Wall-E" />
+		</div>
+
+		<script type="text/javascript">
+			jQuery('#slideshow').simpleSlider({
+				betweenSlideTime: 5000,
+				pauseOnNav: false
+			});
+		</script>
+	</body>
+</html>
